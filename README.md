@@ -49,9 +49,9 @@ Model performance was assessed on the held-out test set using three metrics:
 
 | Metric | Description |
 |--------|-------------|
-| **MAE** | Mean Absolute Error — average prediction error in dollars |
-| **RMSE** | Root Mean Squared Error — penalizes larger errors more heavily |
-| **R²** | Coefficient of determination — proportion of variance explained |
+| **10.41559** | Mean Absolute Error — average prediction error in dollars |
+| **13.39343** | Root Mean Squared Error — penalizes larger errors more heavily |
+| **0.8866376** | Coefficient of determination — proportion of variance explained |
 
 ---
 
@@ -61,7 +61,6 @@ A scatter plot of predicted vs. actual prices is generated, with point size scal
 
 <img width="1230" height="664" alt="image" src="https://github.com/user-attachments/assets/4a26898e-b0c1-4daa-9efc-5f2b942ad610" />
 
-![Model Accuracy Plot](model_accuracy.png)
 > *Point size reflects prediction error — smaller dots indicate more accurate predictions.*
 
 ---
@@ -99,7 +98,3 @@ Rscript Taxi_Predictions.R
 ```
 
 ---
-
-## Author
-
-Built as part of a data science portfolio. Feel free to fork, adapt, or reach out with questions.
