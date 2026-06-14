@@ -47,11 +47,11 @@ Trip_Price ~ Base_Fare * Time_of_Day
 ### 4. Evaluation
 Model performance was assessed on the held-out test set using three metrics:
 
-| Metric | Description |
+| Value | Description |
 |--------|-------------|
-| **10.41559** | Mean Absolute Error — average prediction error in dollars |
-| **13.39343** | Root Mean Squared Error — penalizes larger errors more heavily |
-| **0.8866376** | Coefficient of determination — proportion of variance explained |
+| **10.41559** | Mean Absolute Error (average prediction error in dollars) |
+| **13.39343** | Root Mean Squared Error (penalizes larger errors) |
+| **0.8866376** | Coefficient of determination (proportion of variance explained) |
 
 ---
 
@@ -75,26 +75,3 @@ Install dependencies:
 ```r
 install.packages(c("tidyverse", "caTools"))
 ```
-
----
-
-## Usage
-
-1. Download `taxi_trip_pricing.csv` from Kaggle and place it in `~/Downloads/`
-2. Open and run `Taxi_Predictions.R` in RStudio or from the terminal:
-```bash
-Rscript Taxi_Predictions.R
-```
-3. Results are saved to `Predicted Taxi Prices 2.csv`
-
----
-
-## Files
-
-```
-├── Taxi_Predictions.R        # Main modeling script
-├── Predicted Taxi Prices 2   # Model output (predicted vs. actual prices)
-└── README.md
-```
-
----
